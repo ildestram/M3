@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio D4 - Ilde Stramandinoli</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <!-- per il logo ho utilizzato una icona che ho preso direttamente da bootstrap -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-airplane-engines-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z"
+            />
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#welcome-summer" class="nav-item nav-link">I nostri viaggi</a>
+            <a href="#scopri" class="nav-item nav-link">Scopri altre mete!</a>
+            <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+            <a href="#" class="nav-item nav-link disabled" tabindex="1"
+              >Viaggi sold out!</a
+            >
+            <button type="button" id="button-one" class="btn btn-danger">Cancella le card</button>
+            <!-- <button type="button" id="button-two" class="btn btn-danger">Reimposta le card</button> -->
+            
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a href="#" class="nav-item nav-link">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sezione Jumbotron -->
+    <div class="container">
+      <div class="container-lg my-4">
+        <div class="p-5 mb-4 bg-light border rounded-3">
+          <h1>Affidati a WorldTravel Agency!</h1>
+          <p class="lead">
+            Stanco di affidarti a Booking o Trivago? Contattaci, siamo i leader
+            europei nell'organizzazione di viaggi intercontinentali!
+          </p>
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-info bg-gradient" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Contattaci!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Rispondiamo alle tue domande!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Inserisci la tua mail!">
+          <small id="emailHelp" class="form-text text-muted">Non condividiamo i tuoi dati con nessuno</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info bg-gradient">Invia</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offerta della settimana -->
+    <div class="container" id="if-class">
+      <h2 class="text-center mt-5">Offerte della settimana</h2>
+
+      <div class="row m-auto">
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <div class="card">
+            <img src="./images/parigi-29986.1024x768.jpg" alt="foto-parigi" />
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Parigi</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri Parigi insieme a noi!</p>
+            </div>
+            <div class="card-footer">
+              <p>Durata del viaggio:</p>
+              <p><strong>5 giorni</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <div class="card">
+            <img
+              class="madrid"
+              src="./images/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg"
+              alt="madrid-foto"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Madrid</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 15 al 21 giugno 2023
+              </h6>
+              <p class="card-text">Scopri Madrid insieme a noi!</p>
+            </div>
+            <div class="card-footer">
+              <p>Durata del viaggio:</p>
+              <p><strong>6 giorni</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <div class="card">
+            <img
+              src="./images/shutterstockrf-648833449.jpeg"
+              alt="praga-foto"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Praga</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 24 al 30 settembre 2023
+              </h6>
+              <p class="card-text">Scopri Praga insieme a noi!</p>
+            </div>
+            <div class="card-footer">
+              <p>Durata del viaggio:</p>
+              <p><strong>6 giorni</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+          <div class="card">
+            <img src="./images/maxw-960.jpg" alt="mosca-foto" />
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Mosca</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 6 al 15 ottobre 2023
+              </h6>
+              <p class="card-text">Scopri Mosca insieme a noi!</p>
+            </div>
+            <div class="card-footer">
+              <p>Durata del viaggio:</p>
+              <p><strong>9 giorni</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome summer -->
+    <div class="container" id="welcome-summer">
+      <h2 class="mt-5 text-center">Welcome summer</h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Roma</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Milano</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Ginevra</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Berna</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Napoli</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Cagliari</h5>
+              <h6 class="card-subtitle mb-3 text-muted text-center mt-2">
+                dal 5 al 10 giugno 2023
+              </h6>
+              <p class="card-text">Scopri la città insieme a noi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offerta del giorno -->
+    <!-- Al posto delle card in questo caso ci devi inserire l'immagine a sinistra e la descrizione a destra -->
+    <div class="container mt-5">
+      <h2 class="text-center text-uppercase">Offerta del giorno</h2>
+    </div>
+    <div class="row mt-5 m-auto" id="scopri">
+      <div class="col-md-5">
+        <div class="card">
+          <img
+            src="./images/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-md-7">
+          <h4>New York City</h4>
+          <p>Dal 30 dicembre al 6 gennaio</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est ipsum enim quaerat commodi voluptas quo sapiente, nulla cum, iure impedit optio, quidem in tenetur facere pariatur? Corporis pariatur iste velit quos, accusamus necessitatibus sint excepturi quae consequuntur ab minus, magnam dolorem sunt, expedita quis! Optio non repellendus recusandae minima iure animi, error tenetur veritatis itaque, eaque numquam at dolor quaerat?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Last Minute -->
+  <div class="container mt-5" id="border-last">
+    <h2 class="text-center text-uppercase">Last Minute</h2>
+  </div>
+  <div class="m-4">
+    <div class="card-group">
+        <div class="card">
+            <img src="./images/barcellona.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Barcellona</h5>
+                <p class="card-text">Non fartela scappare!</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 5 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/general-view-of-tokyo-tower-and-the-surrounding-area-on-news-photo-1656343026.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tokyo</h5>
+                <p class="card-text">Non fartela scappare!</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 5 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/49303982736_a223c4c311_b.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Copenaghen</h5>
+                <p class="card-text">Non fartela scappare!</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 5 mins ago</small>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Testimonials -->
+  <section class="mt-5" id="testimonials">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4 text-uppercase">Testimonials</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+          numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+          quisquam eum porro a pariatur veniam.
+        </p>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3 fw-bold">Maria Sanni</h5>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3 fw-bold">Lisa Cuochi</h5>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3 fw-bold">Giovanni Sinti</h5>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+          dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted mt-5">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>WorldTravel Agency
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Viaggi
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Italia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Europa</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Asia</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Link utili
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Prezzi</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contatti</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Social</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Roma, Italia</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@worldtravel.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 54 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 58 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">WorldTravel Agency</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
