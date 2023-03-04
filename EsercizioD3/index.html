@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio D3 Week 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ilde's Favourite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gli album della mia vita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Gli album che dovremo dimenticare!</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text"> Brevi e belle recensioni! </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+
+    <!-- CARD -->
+    <nav class="navbar navbar-light bg-light second-navbar">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Gli album della mia vita
+          </span>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card">
+            <img class="card-img-top" src="./images/512hW0tgA+L._AC_SX466_.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Moderat</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Ascoltalo subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card">
+            <img class="card-img-top" src="./images/71-Y-3usHkL._AC_SX425_.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Arctic Monkeys</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Ascoltalo subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card">
+            <img class="card-img-top" src="./images/71274uOsBUL._AC_SL1500_.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Fleetwood Mac</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Ascoltalo subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card"">
+            <img class="card-img-top" src="./images/91G5ndi8yFL._AC_SL1500_.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Nirvana</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Ascoltalo subito!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-light third-navbar">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Ascolta AM degli Arctic Monkeys
+          </span>
+        </div>
+    </nav>
+    <div class="container image-container">
+        <div class="center-image">
+            <img src="./images/71-Y-3usHkL._AC_SX425_.jpg" alt="">
+        </div>
+    </div>
+    <table class="table table-striped table-dark container">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titolo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Do I Wanna Know?</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>R U Mine?</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>One For The Road</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Arabella</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>I Want It All</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>N.1 Party Anthem</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>One For The Road</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Mad Sounds</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Fireside</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Why'd You Only Call Me When You're High? </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>I Wanna Be Yours</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Snap out of it </td>
+            <td></td>
+            <td></td>
+          </tr>        
+        </tbody>
+    </table>
+
+
+      <nav class="navbar navbar-light bg-light third-navbar">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Gli album che dovremo dimenticare!
+          </span>
+        </div>
+    </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <div class="card">
+              <img class="card-img-top" src="./images/1d_cd-cover_custom-afceb2b33b277ace0e8c92a0d65d409550bdcb24-s1100-c50.jpeg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">One Direction</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Ascolta altro piuttosto!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <div class="card">
+              <img class="card-img-top" src="./images/81A4KqJc98L._AC_SX466_.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Justin Bieber</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Ascolta altro piuttosto!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <div class="card">
+              <img class="card-img-top" src="./images/81EQZ+0mVES._AC_SL1500_.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Sangiovanni</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Ascolta altro piuttosto!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <div class="card"">
+              <img class="card-img-top" src="./images/71hxvRt7A+L._AC_SL1080_.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Little Mix</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Ascolta altro piuttosto!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+
+      <nav class="navbar navbar-light bg-light third-navbar">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Una serie di copertine di album fantastici
+          </span>
+        </div>
+    </nav>
+<div class="row margin-row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="./images/61hjscauMxS._AC_SL1024_.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="./images/Theclash.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="./images/71ZEHe03toL._AC_SX450_.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="./images/reggatta-de-blanc-4f7460fe15236.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="./images/JoyDivision-UnknownPleasures.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="./images/51dvmDB4g2L._AC_SY450_.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  <!-- Gallery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

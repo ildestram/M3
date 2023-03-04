@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ilde's Favourite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gli album della mia vita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Gli album che dovremo dimenticare!</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text"> Brevi e belle recensioni! </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- JUMBOTRON SECTION -->
+    <div class="container-fluid">
+      <div class="mt-4 p-5 rounded" id="jumbotron-back">
+        <h1 class="text-dark jumb">Benvenuti nel safe place della musica!</h1>
+        <p class="text-white bg-dark jimb">
+          La mia generazione dovrebbe ascoltare questa musica!
+        </p>
+      </div>
+    </div>
+
+    <!-- ALBUM PREFERITI -->
+    <div class="container mt-5">
+      <div class="row">
+        <h3>Gli album della mia vita</h3>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card" id="card-relative">
+            <img src="./images/512hW0tgA+L._AC_SX466_.jpg" alt="moderat" />
+            <span class="badge text-bg-primary">Elettronica</span>
+            <div class="card-body">
+              <h5 class="card-title">Moderat</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, laboriosam!
+              </p>
+              <a href="#" class="btn btn-primary">Ascolta subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card" id="card-relative">
+            <img
+              src="./images/71-Y-3usHkL._AC_SX425_.jpg"
+              alt="moderat"
+              style="height: 190px"
+            />
+            <span class="badge text-bg-primary">Rock & Roll</span>
+            <div class="card-body">
+              <h5 class="card-title">Arctic Monkeys</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, laboriosam!
+              </p>
+              <a href="#" class="btn btn-primary">Ascolta subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card" id="card-relative">
+            <img
+              src="./images/71274uOsBUL._AC_SL1500_.jpg"
+              alt="moderat"
+              style="height: 190px"
+            />
+            <span class="badge text-bg-primary">Blues Rock</span>
+            <div class="card-body">
+              <h5 class="card-title">Fletwood Mac</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, laboriosam!
+              </p>
+              <a href="#" class="btn btn-primary">Ascolta subito!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="card" id="card-relative">
+            <img
+              src="./images/91G5ndi8yFL._AC_SL1500_.jpg"
+              alt="moderat"
+              style="height: 190px"
+            />
+            <span class="badge text-bg-primary">Grunge</span>
+            <div class="card-body">
+              <h5 class="card-title">Nirvana</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, laboriosam!
+              </p>
+              <a href="#" class="btn btn-primary">Ascolta subito!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABELLA -->
+    <div class="container mt-5">
+      <h3>Ascolta AM degli Arctic Monkeys</h3>
+    </div>
+    <div class="container image-container">
+      <div class="center-image">
+        <img src="./images/71-Y-3usHkL._AC_SX425_.jpg" alt="" />
+      </div>
+    </div>
+    <table class="table container">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Titolo</th>
+          <th>Durata</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            Do I Wanna Know?<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>4:32</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            R U Mine?<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:21</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            One For The Road<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:26</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            Arabella<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:27</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            I Want It All<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:05</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            No. 1 Party Anthem<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>4:03</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            Mad Sounds<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:35</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            Fireside<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>3:01</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>
+            Snap Out Of It<span
+              ><button class="btn btn-danger">Cancella</button></span
+            >
+          </td>
+          <td>3:13</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>
+            Knee Socks<span
+              ><button onclick="deleteRow(this)" class="btn btn-danger">
+                Cancella
+              </button></span
+            >
+          </td>
+          <td>4:17</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- BOTTONE-MODALE AGGIUNGI TRACCIA -->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Aggiungi Traccia
+      </button>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aira-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Aggiungi Traccia
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex">
+                <div class="mb-3 p-2">
+                  <label for="input1" class="form-label"
+                    >Numero della traccia</label
+                  >
+                  <input type="text" class="form-control" id="input1" />
+                </div>
+                <div class="mb-3 p-2">
+                  <label for="input2" class="form-label"
+                    >Titolo della traccia</label
+                  >
+                  <input type="text" class="form-control" id="input2" />
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="mb-3 p-2">
+                  <label for="input3" class="form-label"
+                    >Nome della traccia</label
+                  >
+                  <input type="text" class="form-control" id="input3" />
+                </div>
+                <div class="mb-3 p-2">
+                  <label for="input4" class="form-label"
+                    >Durata della traccia</label
+                  >
+                  <input type="text" class="form-control" id="input4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scrip.js"></script>
+  </body>
+</html>

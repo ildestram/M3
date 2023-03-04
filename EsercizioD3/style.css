@@ -1,0 +1,97 @@
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(0, 147, 0);
+}
+
+.card {
+  margin-top: 20px;
+  background-color: rgb(11, 9, 9);
+}
+
+.btn {
+  background: linear-gradient(to left, black, green);
+  font-size: 13px;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+}
+
+.card-text {
+  color: white;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-row {
+  margin-top: 70px;
+}
+
+.second-navbar {
+  margin-top: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(to left, black, green);
+}
+
+.navbar-text {
+  color: white;
+  font-weight: 500;
+  padding-left: 7vh;
+  text-transform: uppercase;
+}
+
+.third-navbar {
+  margin-top: 80px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(to left, black, green);
+}
+
+#jumbotron-back {
+  background-image: url(./images/311690.jpg);
+  background-size: cover;
+}
+
+.jumb {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.jimb {
+  width: 400px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#card-relative {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+}
+
+.table tbody tr:nth-child(2),
+.table tbody tr:nth-child(4),
+.table tbody tr:nth-child(6),
+.table tbody tr:nth-child(8),
+.table tbody tr:nth-child(10) {
+  background-color: rgb(114, 114, 113);
+}
