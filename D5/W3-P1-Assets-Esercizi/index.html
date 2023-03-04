@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D5 - Esercizio di Ilde Stramandinoli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img src="./assets/logo.svg" alt="logo-brand" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Browse</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Landings</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Pages</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Accounts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="row d-flex">
+          <div class="col mt-1">
+            <div class="btn-group">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                  />
+                </svg>
+              </button>
+              <ul class="dropdown-menu">
+                ...
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <!-- <img class="avatar" src="./assets/avatar-1.jpg" alt="avatar" /> -->
+            <div class="btn-group">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/avatar-1.jpg" class="avatar" alt="" />
+              </button>
+              <ul class="dropdown-menu">
+                ...
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" id="first-section-hero">
+            <h3>Welcome Web Students!</h3>
+            <p>
+              Hand-picked Instructor and expertly crafted <br />
+              courses, designed for the modern students and <br />
+              entrepeneur
+            </p>
+            <a href="#" class="btn me-3 btnNone">Browse Courses</a>
+            <a href="#" class="btn btn-outline-light btnFirst"
+              >Are You Instructor?</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <img src="./assets/hero-img.png" alt="hero-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION UNDER HERO -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="d-flex mt-3">
+              <i class="bi bi-camera-video"></i>
+              <p>
+                30.000 online courses <br />
+                <span class="lighter">Enjoy a variety of fresh topics</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex mt-3">
+              <i class="bi bi-people"></i>
+              <p>
+                Expert instruction <br /><span class="lighter"
+                  >Find the right instructor for you</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex mt-3">
+              <i class="bi bi-clock"></i>
+              <p>
+                Lifetime access <br /><span class="lighter"
+                  >Learn on your schedule</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <main class="container">
+      <div class="container mx-auto" id="container-first">
+        <div class="row">
+          <p>Recommended to you</p>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-graphql.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          GraphQL: introduction to graphQL for beginners
+                        </p>
+                        <p>
+                          <span><i class="bi bi-clock-fill"></i> 2h 40min</span>
+                          <span><i class="bi bi-bar-chart"></i> Advanced</span>
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-2.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Brooklyn Simmons</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-javascript.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          A Complete Beginner's Guite to Javascript
+                        </p>
+                        <p>
+                          <span><i class="bi bi-clock-fill"></i> 2h 40min</span>
+                          <span><i class="bi bi-bar-chart"></i> Advanced</span>
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-3.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Jenny Wilson</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-node.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Beginning Node.js, Express & MongoDB Development
+                        </p>
+                        <p>
+                          <span><i class="bi bi-clock-fill"></i> 2h 40min</span>
+                          <span><i class="bi bi-bar-chart"></i> Advanced</span>
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-4.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Sina Ray</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-laravel.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Laravel: The Ultimate Beginner's Guide to Learn
+                        </p>
+                        <p>
+                          <span><i class="bi bi-clock-fill"></i> 2h 40min</span>
+                          <span><i class="bi bi-bar-chart"></i> Advanced</span>
+                        </p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-5.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Sobo Rikhan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- hr -->
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <p>Most Popular</p>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-html.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          HTML Full Course - Build a Website Tutorial
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-6.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Miston Wilson</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-javascript.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          A Complete Beginner's Guide to Javascript
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-7.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Jenny Wilson</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-node.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Beginning Node.js, Express & MongoDB Development
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-8.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Sina Ray</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-react.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          How to easily create a website with React
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-8.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>April Noms</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- hr -->
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <p>Trending</p>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-gatsby.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Revolutionize how you build the web
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-1.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Jenny Wilson</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-html.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          HTML Full Course - Build a Website Tutorial
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-2.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Brooklyn Simmons</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-node.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Beginning Node.js, Express & MongoDB Development
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-3.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Sina Ray</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="card">
+                      <img
+                        src="./assets/course-laravel.jpg"
+                        class="card-img-top"
+                        alt="graphqi"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">
+                          Laravel: The Ultimate Beginner's Guide to Learn
+                        </p>
+                        <p>2h 40min Advance</p>
+                        <p>$500</p>
+                      </div>
+                      <div class="card-footer pb-0">
+                        <div class="d-flex">
+                          <img
+                            src="./assets/avatar-5.jpg"
+                            style="
+                              width: 20px;
+                              border-radius: 20px;
+                              height: 20px;
+                            "
+                            alt="avatar"
+                          />
+                          <p>Sobo Rikhan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container mt-5 text-center text-lg-start text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>@2022 Geeks. All Rights Reserved</span>
+        </div>
+        <div>
+          <a href="#" class="me-4 text-reset">Privacy</a>
+          <a href="#" class="me-4 text-reset">Terms</a>
+          <a href="#" class="me-4 text-reset">Feedback</a>
+          <a href="#" class="me-4 text-reset">Support</a>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
