@@ -1,0 +1,60 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rimbalza;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+
+/* Animazioni */
+@keyframes rimbalza {
+  0% {
+    top: 0;
+    transform: scale(1, 1);
+  }
+
+  45% {
+    top: 450px;
+    transform: scale(1, 1);
+  }
+
+  46% {
+    top: 460px;
+    transform: scale(1, 0.9);
+  }
+
+  47% {
+    top: 470px;
+    transform: scale(1, 0.8);
+  }
+
+  48% {
+    top: 480px;
+    transform: scale(1, 0.7);
+  }
+
+  49% {
+    top: 490px;
+    transform: scale(1, 0.6);
+  }
+
+  50% {
+    top: 500px;
+    transform: scale(1, 0.5);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  75% {
+    top: 250px;
+    transform: scale(1, 0.8);
+  }
+
+  100% {
+    top: 0;
+    transform: scale(1, 1);
+  }
+}
